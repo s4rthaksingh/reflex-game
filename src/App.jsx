@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [gameRunning, setGameRunning] = useState(true);
+  const [gameRunning, setGameRunning] = useState(false);
   const [winner, setWinner] = useState(null);
   const [score, setScore] = useState([0, 0]);
   const [playerNames, setPlayerNames] = useState({
@@ -111,7 +111,7 @@ function App() {
         {playerNames.l} : {score[1]}
       </h1>
       <h1 className="text-9xl mb-15 mt-15" id="gameOverText">
-        Press enter to restart
+        Press enter to start
       </h1>
     </div>
   );
